@@ -4,8 +4,8 @@ scikit-learn>=0.18
 matplotlib>=1.4.3
 pandas>=0.19
 catboost>=0.23.2
+mongodb : 3.5.9
 
-package.json file:
 {
   "name": "my-express-server",
   "version": "1.0.0",
@@ -699,3 +699,4 @@ package-lock.json file :
     }
   }
 }
+
