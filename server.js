@@ -5,7 +5,7 @@
  var mongodb= require("mongodb");
  const mongoose = require("mongoose");
  var path= require("path");
- const port= process.env.PORT || 3000;
+ var port= process.env.PORT || 3000;
 //var dbcon=mongodb.MongoClient.connect("mongodb://localhost:27017/ibm");
 var db=mongoose.connection;
 db.on('error', console.log.bind(console, "connection error"));
