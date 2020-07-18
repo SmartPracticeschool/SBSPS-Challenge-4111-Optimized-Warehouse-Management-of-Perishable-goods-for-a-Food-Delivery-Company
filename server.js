@@ -5,6 +5,8 @@
  var mongodb= require("mongodb");
  const mongoose = require("mongoose");
  var path= require("path");
+
+ var port= process.env.PORT || 3000;
  const port= 3000;
 //var dbcon=mongodb.MongoClient.connect("mongodb://localhost:27017/ibm");
 var db=mongoose.connection;
@@ -18,6 +20,7 @@ db.once('open', function(callback){
 
  app.use(express.static(__dirname + "/public"));
 
+ app.listen(port , function(){
  app.listen(3000, function(){
    console.log("server started on port 3000");
  });
